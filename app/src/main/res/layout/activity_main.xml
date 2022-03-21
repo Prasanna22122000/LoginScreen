@@ -41,16 +41,18 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButtonMale"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
-            android:text="Male" />
+            android:text="Male"
+            android:onClick="onRadioButtonClicked"/>
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButtonFemale"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
-            android:text="Female" />
+            android:text="Female"
+            android:onClick="onRadioButtonClicked"/>
 
     </RadioGroup>
 
@@ -92,6 +94,7 @@
         android:layout_height="wrap_content"
         android:text="Submit"
         android:layout_margin="30sp"
+        android:onClick="SubmitClicked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
